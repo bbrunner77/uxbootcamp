@@ -1,0 +1,486 @@
+/*---------------------------------------------------------------------------------------------------*/
+/* 1 general */
+/* 2 global nav */
+/* 3 buttons */
+/* 4 home page hero */
+/* 5 home page grid */
+/* 6 donate grid */
+/*---------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------*/
+/* 1 general */
+/*---------------------------------------------------------------------------------------------------*/
+
+body{
+    margin:0px;
+    padding:0px;
+    padding-bottom:60px;
+}
+
+h1, h2, h3{
+    font-family: 'Merriweather', serif;
+}
+
+h1{
+    font-size:60px;
+}
+
+h2{
+    font-size:36px;
+}
+
+p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 22px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/* 2 global nav */
+/*---------------------------------------------------------------------------------------------------*/
+
+.nav{
+    background-color: #475458;
+    height:100px;
+    font-family: 'Merriweather', serif;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:96%;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top:20px;
+    padding-bottom:20px;
+    /* position:fixed; */
+    top:0;
+    left:0;
+}
+
+.nav_cnt{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav_cnt_nr{
+    font-size: 64pt;
+    /* height:64px; */
+    margin:0px;
+    font-family: 'Merriweather', serif;
+
+}
+
+.nav_cnt_txt{
+    font-size: 18pt;
+    margin:0px;
+    font-family: 'Merriweather', serif;
+}
+
+.nav a{
+    text-decoration:none;
+    color:white;
+    font-size: 20pt;
+}
+
+.nav button{
+    background-color: #BF5700;
+    color:white;
+    font-size: 20pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    height:60px;
+    border-radius: 435px;
+    border: none;
+    width:200px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/* 3 input */
+/*---------------------------------------------------------------------------------------------------*/
+
+
+input{
+    height:25px;
+    font-size: 22px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.amountButton{
+    background-color: #469BBB;
+    color:white;
+    font-size: 32pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    height:60px;
+    border-radius: 435px;
+    border: none;
+    width:200px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+
+}
+
+.hero button{
+    background-color: #BF5700;
+    color:white;
+    font-size: 20pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    height:60px;
+    border-radius: 435px;
+    border: none;
+    width:300px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.orangeButton{
+    background-color: #BF5700;
+    color:white;
+    font-size: 20pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    height:60px;
+    border-radius: 435px;
+    border: none;
+    width:300px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.checkbox{
+    -webkit-appearance: none;
+    border:2px solid #BF5700;
+    padding:9px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    display: inline-block;
+    position: relative;
+}
+
+.checkbox:checked {
+	background-color: #BF5700;
+	border: 2px solid #BF5700;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.checkContainer{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border:2px solid #BF5700;
+}
+
+.checkContainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkContainer input:checked ~ .checkmark {
+    background-color: #BF5700;
+}
+
+.checkContainer:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkContainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/* 4 home page hero */
+/*---------------------------------------------------------------------------------------------------*/
+
+.hero{
+    position:fixed;
+    left:0;
+    top:140px;
+    background-image: url("images/home_page_hero.png");
+    height:1000px;
+    background-size: cover;
+    width:100%;
+}
+
+.donateHero{
+    position:fixed;
+    left:0;
+    top:140px;
+    background-image: url("images/home_page_hero.png");
+    height:1000px;
+    background-size: cover;
+    width:100%;
+}
+
+
+.hero h1{
+    color:white;
+    font-size:60pt;
+    position:absolute;
+    left:10%;
+    top:0;
+}
+
+.hero p{
+    color:white;
+    font-size: 20pt;
+    font-family: 'Merriweather Sans', sans-serif;
+    position:absolute;
+    left:10%;
+    right:40%;
+    top:20%;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/* 5 home page grid */
+/*---------------------------------------------------------------------------------------------------*/
+
+
+.button_donate_now{
+    position:absolute;
+    left:20%;
+    top:70%;
+}
+
+.button_get_involved{
+    position:absolute;
+    right:20%;
+    top:70%;
+}
+
+.subhero{
+    display:grid;
+    position:absolute;
+    top:1140px;
+    background-color: #475458;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas: "subhero_left sierra ozark";
+
+    height:130px;
+    width:100%;
+    font-family: 'Merriweather', serif;
+    font-size:22pt;
+    color:white;
+    padding: 0px 0px 0px 0px;
+}
+
+.subhero_left{
+    grid-area:subhero_left;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "sub_cnt_title sub_cnt_title sub_cnt_title"
+        "sub_cnt_days_nr sub_cnt_hrs_nr sub_cnt_mins_nr sub_cnt_secs_nr"
+        "sub_cnt_days_txt sub_cnt_hrs_txt sub_cnt_mins_txt sub_cnt_secs_txt"
+        ;
+}
+
+.sierra{
+    grid-area:sierra;
+    display:grid;
+    grid-template-columns:110px 1fr;
+    grid-template-areas:"sierra_logo sierra_txt";
+    align-items: center;
+}
+
+.sierra_logo{
+    grid-area:sierra_logo;
+    background-image: url("images/sierra.png");
+    background-size:cover;
+    height:110px;
+}
+
+.sierra_txt{
+    grid-area:sierra_txt;
+    margin:10px 10px 10px 10px;
+}
+
+.ozark{
+    grid-area:ozark;
+    display:grid;
+    grid-template-columns:110px 1fr;
+    grid-template-areas:"ozark_logo ozark_txt";
+    align-items: center;
+}
+
+.ozark_logo{
+    grid-area:ozark_logo;
+    background-image: url("images/ozarks.png");
+    background-size:cover;
+    height:110px;
+}
+
+.ozark_txt{
+    grid-area:ozark_txt;
+    margin:10px 10px 10px 10px;
+}
+
+.sub_cnt_title{
+    grid-area:sub_cnt_title;
+}
+
+.sub_cnt_days_nr{
+    grid-area:sub_cnt_days_nr;
+}
+
+.sub_cnt_days_txt{
+    grid-area:sub_cnt_days_txt;
+}
+
+.sub_cnt_hrs_nr{
+    grid-area:sub_cnt_hrs_nr;
+}
+
+.sub_cnt_hrs_txt{
+    grid-area:sub_cnt_hrs_txt;
+}
+
+.sub_cnt_mins_nr{
+    grid-area:sub_cnt_mins_nr;
+}
+
+.sub_cnt_mins_txt{
+    grid-area:sub_cnt_mins_txt;
+}
+
+.sub_cnt_secs_nr{
+    grid-area:sub_cnt_secs_nr;
+}
+
+.sub_cnt_secs_txt{
+    grid-area:sub_cnt_secs_txt;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/* 6 donate grid */
+/*---------------------------------------------------------------------------------------------------*/
+.content{
+    padding-left:20%;
+    padding-right:20%;
+}
+
+/* Amount Grid */
+.amountButtonDiv{
+    height: 200px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "amt20 amt50 amt100"
+        "amt200 amt500 amtOther"
+        ;
+}
+
+#amt20{grid-area:amt20;}
+#amt50{grid-area:amt50;}
+#amt100{grid-area:amt100;}
+#amt200{grid-area:amt200;}
+#amt500{grid-area:amt500;}
+#amtOther{grid-area:amtOther;}
+
+/* Option Grid */
+
+/* #recurringDiv{
+    grid-area:recurringDiv;
+    display:grid;
+    grid-template-columns:10px 1fr;
+    grid-template-areas: "recurringCheck recurringTxt";
+    height:20px;
+}
+
+#riderDiv{
+    grid-area:riderDiv;
+    display:grid;
+    grid-template-columns:10px 1fr;
+    grid-template-areas: "riderCheck riderTxt";
+    height:20px;
+}
+
+#honorDiv{
+    grid-area:honorDiv;
+    display:grid;
+    grid-template-columns:10px 1fr;
+    grid-template-areas: "honorCheck honorTxt";
+    height:20px;
+} */
+
+.donateOptions{
+    padding-bottom:60px;
+}
+
+/* Billing Info */
+.billingLabel{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: right;
+    padding-right:10px;
+    font-size:22px;
+}
+
+#firstNameLabel{grid-area:firstNameLabel;}
+#firstNameInput{grid-area:firstNameInput;}
+#lastNameLabel{grid-area:lastNameLabel;}
+#lastNameInput{grid-area:lastNameInput;}
+#emailLabel{grid-area:emailLabel;}
+#emailInput{grid-area:emailInput;}
+#phoneLabel{grid-area:phoneLabel;}
+#phoneInput{grid-area:phoneInput;}
+#CountryLabel{grid-area:CountryLabel;}
+#CountryInput{grid-area:CountryInput;}
+#addressLabel{grid-area:addressLabel;}
+#addressInput{grid-area:addressInput;}
+#cityLabel{grid-area:cityLabel;}
+#cityInput{grid-area:cityInput;}
+#stateLabel{grid-area:stateLabel;}
+#stateInput{grid-area:stateInput;}
+#zipLabel{grid-area:zipLabel;}
+#zipInput{grid-area:zipInput;}
+#blank{grid-area:blank;}
+
+.billing{
+    /* font-size: 22px; */
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:50px 50px 50px 50px 50px 50px ;
+    grid-template-areas:
+        "firstNameLabel firstNameInput lastNameLabel lastNameInput"
+        "emailLabel emailInput emailInput emailInput"
+        "phoneLabel phoneInput CountryLabel CountryInput"
+        "addressLabel addressInput addressInput addressInput"
+        "cityLabel cityInput stateLabel stateInput" 
+        "zipLabel zipInput blank blank"
+        ;
+}

@@ -16,7 +16,7 @@ function sierra_out(){
     $('.sierra_logo').css('background-image',"url(images/sierra.png)");
 };
 
-$('.sierra_txt').hover(sierra_in,sierra_out);
+$('.sierra').hover(sierra_in,sierra_out);
 
 function ozark_in(){
     $('.ozark').css('background-color',"#98C149");
@@ -28,4 +28,4 @@ function ozark_out(){
     $('.ozark_logo').css('background-image',"url(images/ozarks.png)");
 };
 
-$('.ozark_txt').hover(ozark_in,ozark_out);
+$('.ozark').hover(ozark_in,ozark_out);
